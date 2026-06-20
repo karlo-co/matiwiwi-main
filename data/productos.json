@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Teclado básico USB",
+    "descripcion": "Teclado de ejemplo para cargar desde una base de datos local en formato JSON.",
+    "precio": 8990,
+    "stock": 10,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse inalámbrico",
+    "descripcion": "Mouse cómodo con conexión inalámbrica y diseño ergonómico.",
+    "precio": 12990,
+    "stock": 15,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 3,
+    "nombre": "Pantalla LED 24 pulgadas",
+    "descripcion": "Monitor Full HD con panel LED y entrada HDMI.",
+    "precio": 64990,
+    "stock": 8,
+    "categoria": "Pantallas"
+  },
+  {
+    "id": 4,
+    "nombre": "Cámara web HD",
+    "descripcion": "Cámara para videollamadas con micrófono incorporado.",
+    "precio": 24990,
+    "stock": 12,
+    "categoria": "Cámaras"
+  },
+  {
+    "id": 5,
+    "nombre": "Cargador USB-C 65W",
+    "descripcion": "Cargador veloz para notebooks, tablets y teléfonos compatibles.",
+    "precio": 19990,
+    "stock": 20,
+    "categoria": "Cargadores"
+  },
+  {
+    "id": 6,
+    "nombre": "Extensión USB 3.0 1.5m",
+    "descripcion": "Cable de extensión USB para conectar dispositivos a mayor distancia.",
+    "precio": 7990,
+    "stock": 25,
+    "categoria": "Accesorios"
+  }
+]

@@ -24,7 +24,7 @@ fetch("data/productos.json")
   .then(respuesta => respuesta.json())
   .then(datos => {
     productoEjemplo = datos[0];
-    mostrarProducto(productoEjemplo);
+    mostrarProductos(datos);
   })
   .catch(error => {
     console.error("Error al cargar productos.json:", error);
@@ -43,6 +43,19 @@ function mostrarProducto(producto) {
   `;
 
   actualizarResumenCompra();
+}
+
+function mostrarProductos(productos) {
+  const contenedor = document.getElementById("contenedor-productos");
+  
+  contenedor.innerHTML = productos.map(producto => `
+    <div class="producto">
+      <h3>${producto.nombre}</h3>
+      <p>${producto.descripcion}</p>
+      <p><strong>Precio:</strong> $${producto.precio}</p>
+      <p><strong>Stock:</strong> ${producto.stock}</p>
+    </div>
+  `).join("");
 }
 
 function actualizarResumenCompra() {

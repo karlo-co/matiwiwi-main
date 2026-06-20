@@ -65,21 +65,24 @@
       <h2>Formulario de contacto</h2>
 
       <form id="formContacto" action="https://formsubmit.co/carlos.gonzalez.acevedo1997@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
 
-        <label for="nombreContacto">Nombre:</label>
-        <input type="text" id="nombreContacto" name="nombre">
+  <label for="nombreContacto">Nombre:</label>
+  <input type="text" id="nombreContacto" name="nombre">
+  <span id="error-nombreContacto" class="error"></span>   <!-- AGREGAR -->
 
-        <label for="correoContacto">Correo:</label>
-        <input type="email" id="correoContacto" name="correo">
+  <label for="correoContacto">Correo:</label>
+  <input type="email" id="correoContacto" name="correo">
+  <span id="error-correoContacto" class="error"></span>   <!-- AGREGAR -->
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" name="mensaje"></textarea>
+  <span id="error-mensaje" class="error"></span>          <!-- AGREGAR -->
 
-        <button type="submit">Enviar contacto</button>
-      </form>
+  <button type="submit">Enviar contacto</button>
+</form>
     </section>
   </main>
 

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Extensión USB 3.0">
+  <rect width="300" height="200" fill="#f1f5f9"/>
+  <rect x="40" y="85" width="55" height="30" rx="6" fill="#2563eb"/>
+  <rect x="30" y="92" width="12" height="16" fill="#94a3b8"/>
+  <path d="M95 100 C 150 60, 160 140, 215 100" fill="none" stroke="#1f2937" stroke-width="10" stroke-linecap="round"/>
+  <rect x="215" y="85" width="55" height="30" rx="6" fill="#1f2937"/>
+  <rect x="258" y="92" width="12" height="16" fill="#94a3b8"/>
+</svg>

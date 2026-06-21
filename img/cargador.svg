@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Cargador USB-C 65W">
+  <rect width="300" height="200" fill="#f1f5f9"/>
+  <rect x="105" y="60" width="90" height="80" rx="12" fill="#1f2937"/>
+  <rect x="132" y="44" width="8" height="20" fill="#94a3b8"/>
+  <rect x="160" y="44" width="8" height="20" fill="#94a3b8"/>
+  <rect x="140" y="140" width="20" height="10" fill="#475569"/>
+  <path d="M150 78l-12 22h10l-4 18 16-26h-10z" fill="#f59e0b"/>
+</svg>

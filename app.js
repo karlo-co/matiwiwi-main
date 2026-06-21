@@ -19,16 +19,6 @@ function limpiarError(idCampo) {
   if (span) span.textContent = "";
 }
 
-// Crea un campo oculto en el formulario (cada uno se ve como una fila en el correo)
-function agregarCampoOculto(form, nombre, valor) {
-  const input = document.createElement("input");
-  input.type = "hidden";
-  input.name = nombre;
-  input.value = valor;
-  input.classList.add("boleta-item"); // marca para poder limpiarlos antes de reenviar
-  form.appendChild(input);
-}
-
 // ---------- Cargar productos desde el JSON ----------
 fetch("data/productos.json")
   .then(respuesta => respuesta.json())
@@ -46,7 +36,6 @@ function mostrarProductos(lista) {
 
   contenedor.innerHTML = lista.map(producto => `
     <div class="producto">
-      <img class="producto-img" src="${producto.imagen}" alt="${producto.nombre}">
       <h3>${producto.nombre}</h3>
       <p>${producto.descripcion}</p>
       <p><strong>Categoría:</strong> ${producto.categoria}</p>
@@ -141,36 +130,11 @@ document.getElementById("formCompra").addEventListener("submit", function(event)
     hayError = true;
   }
 
-  // Si todo está bien, armamos la boleta con un campo por producto
+  // Agregamos la fecha a la boleta que se envía por correo
   if (!hayError) {
-    const form = this;
-
-    // Limpiar campos de una boleta anterior (por si el usuario reenvía)
-    form.querySelectorAll(".boleta-item").forEach(el => el.remove());
-
-    // Fecha de la compra
     const fecha = new Date().toLocaleString("es-CL");
-    agregarCampoOculto(form, "Fecha", fecha);
-
-    // Un campo (fila) por cada producto seleccionado, con su detalle individual
-    let numero = 1;
-    document.querySelectorAll(".cant-producto").forEach(input => {
-      const cantidad = Number(input.value);
-      const id = Number(input.dataset.id);
-      const producto = productos.find(p => p.id === id);
-
-      if (producto && cantidad > 0) {
-        const subtotal = producto.precio * cantidad;
-        const detalle =
-          `${producto.nombre} | Cantidad: ${cantidad} | ` +
-          `Precio unitario: $${producto.precio} | Subtotal: $${subtotal}`;
-        agregarCampoOculto(form, `Producto ${numero}`, detalle);
-        numero++;
-      }
-    });
-
-    // Total general como última fila
-    agregarCampoOculto(form, "TOTAL", `$${total}`);
+    const texto = lineas.join(" | ") + ` | TOTAL: $${total}`;
+    document.getElementById("detalleProducto").value = `Fecha: ${fecha} | ${texto}`;
   }
 
   if (hayError) {

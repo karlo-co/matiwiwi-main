@@ -5,7 +5,8 @@
     "descripcion": "Teclado de ejemplo para cargar desde una base de datos local en formato JSON.",
     "precio": 8990,
     "stock": 10,
-    "categoria": "Periféricos"
+    "categoria": "Periféricos",
+    "imagen": "img/teclado.svg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "descripcion": "Mouse cómodo con conexión inalámbrica y diseño ergonómico.",
     "precio": 12990,
     "stock": 15,
-    "categoria": "Periféricos"
+    "categoria": "Periféricos",
+    "imagen": "img/mouse.svg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "descripcion": "Monitor Full HD con panel LED y entrada HDMI.",
     "precio": 64990,
     "stock": 8,
-    "categoria": "Pantallas"
+    "categoria": "Pantallas",
+    "imagen": "img/pantalla.svg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "descripcion": "Cámara para videollamadas con micrófono incorporado.",
     "precio": 24990,
     "stock": 12,
-    "categoria": "Cámaras"
+    "categoria": "Cámaras",
+    "imagen": "img/camara.svg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "descripcion": "Cargador veloz para notebooks, tablets y teléfonos compatibles.",
     "precio": 19990,
     "stock": 20,
-    "categoria": "Cargadores"
+    "categoria": "Cargadores",
+    "imagen": "img/cargador.svg"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "descripcion": "Cable de extensión USB para conectar dispositivos a mayor distancia.",
     "precio": 7990,
     "stock": 25,
-    "categoria": "Accesorios"
+    "categoria": "Accesorios",
+    "imagen": "img/cable.svg"
   }
 ]

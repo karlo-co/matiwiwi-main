@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Mouse inalámbrico">
+  <rect width="300" height="200" fill="#f1f5f9"/>
+  <rect x="120" y="45" width="60" height="115" rx="30" fill="#1f2937"/>
+  <line x1="150" y1="50" x2="150" y2="95" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="146" y="60" width="8" height="20" rx="4" fill="#2563eb"/>
+</svg>

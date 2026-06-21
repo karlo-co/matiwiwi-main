@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Monitor LED 24 pulgadas">
+  <rect width="300" height="200" fill="#f1f5f9"/>
+  <rect x="50" y="35" width="200" height="120" rx="8" fill="#1f2937"/>
+  <rect x="62" y="47" width="176" height="96" rx="4" fill="#2563eb"/>
+  <path d="M80 130l35-45 25 30 28-42 40 57z" fill="#93c5fd"/>
+  <rect x="135" y="155" width="30" height="14" fill="#1f2937"/>
+  <rect x="110" y="169" width="80" height="8" rx="3" fill="#1f2937"/>
+</svg>

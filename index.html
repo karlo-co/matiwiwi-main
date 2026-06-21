@@ -9,6 +9,7 @@
 <body>
 
   <header>
+    <img src="img/logo.svg" alt="Logo de la tienda" class="logo">
     <h1>Tienda de Productos Electrónicos</h1>
     <nav>
       <a href="#inicio">Inicio</a>
@@ -21,20 +22,24 @@
   <main>
     <section id="inicio">
       <h2>Inicio</h2>
-      <p>Sitio base para trabajar HTML, CSS, JavaScript, JSON local y formularios con envío por correo. mejoraresmos sus espectativas</p>
+      <img src="img/banner.svg" alt="Banner de la tienda" class="banner">
+      <p>Bienvenido a nuestra tienda de productos electrónicos. Aquí encontrarás
+         periféricos, pantallas y accesorios de calidad para tu equipo.</p>
     </section>
 
     <section id="quienes-somos">
       <h2>Quiénes somos</h2>
-      <p>Somos una tienda de productos tecnológicos de calidad.</p>
+      <p>Somos una tienda de productos tecnológicos de calidad, dedicada a
+         ofrecer soluciones accesibles para estudiantes y profesionales.</p>
     </section>
 
     <section id="productos">
       <h2>Productos</h2>
-      <p>El producto de ejemplo se carga desde <strong>data/productos.json</strong>.</p>
+      <p>Los productos se cargan desde <strong>data/productos.json</strong>.
+         Indica las cantidades y revisa el total antes de enviar tu compra.</p>
 
       <div id="contenedor-productos">
-        <!-- JavaScript mostrará aquí el producto desde el JSON -->
+        <!-- JavaScript mostrará aquí los productos desde el JSON -->
       </div>
 
       <h3>Formulario de compra / boleta simple</h3>
@@ -43,19 +48,21 @@
         <input type="hidden" name="_subject" value="Nueva solicitud de compra">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://karlo-co.github.io/matiwiwi/gracias.html">
 
-        <input type="hidden" id="detalleProducto" name="detalle_producto">
+        <!-- Solo para el resumen en pantalla; el detalle real se envía por producto desde app.js -->
+        <input type="hidden" id="detalleProducto">
 
         <label for="nombreCompra">Nombre cliente:</label>
         <input type="text" id="nombreCompra" name="nombre_cliente">
+        <span id="error-nombreCompra" class="error"></span>
 
         <label for="correoCompra">Correo cliente:</label>
         <input type="email" id="correoCompra" name="correo_cliente">
-
-        <label for="cantidad">Cantidad:</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+        <span id="error-correoCompra" class="error"></span>
 
         <p id="resumenCompra">Resumen de compra pendiente.</p>
+        <span id="error-compra" class="error"></span>
 
         <button type="submit">Enviar compra por correo</button>
       </form>
@@ -65,29 +72,34 @@
       <h2>Formulario de contacto</h2>
 
       <form id="formContacto" action="https://formsubmit.co/carlos.gonzalez.acevedo1997@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://karlo-co.github.io/matiwiwi/gracias.html">
 
-  <label for="nombreContacto">Nombre:</label>
-  <input type="text" id="nombreContacto" name="nombre">
-  <span id="error-nombreContacto" class="error"></span>   <!-- AGREGAR -->
+        <label for="nombreContacto">Nombre:</label>
+        <input type="text" id="nombreContacto" name="nombre">
+        <span id="error-nombreContacto" class="error"></span>
 
-  <label for="correoContacto">Correo:</label>
-  <input type="email" id="correoContacto" name="correo">
-  <span id="error-correoContacto" class="error"></span>   <!-- AGREGAR -->
+        <label for="correoContacto">Correo:</label>
+        <input type="email" id="correoContacto" name="correo">
+        <span id="error-correoContacto" class="error"></span>
 
-  <label for="mensaje">Mensaje:</label>
-  <textarea id="mensaje" name="mensaje"></textarea>
-  <span id="error-mensaje" class="error"></span>          <!-- AGREGAR -->
+        <label for="asuntoContacto">Asunto:</label>
+        <input type="text" id="asuntoContacto" name="asunto">
+        <span id="error-asuntoContacto" class="error"></span>
 
-  <button type="submit">Enviar contacto</button>
-</form>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <span id="error-mensaje" class="error"></span>
+
+        <button type="submit">Enviar contacto</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>Agradecido de su Material para guiarnos❤️ - Programación Web</p>
+    <p>Agradecido de su Material para guiarnos ❤️ - Programación Web</p>
   </footer>
 
   <script src="js/app.js"></script>

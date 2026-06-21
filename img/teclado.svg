@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Teclado USB">
+  <rect width="300" height="200" fill="#f1f5f9"/>
+  <rect x="40" y="70" width="220" height="80" rx="10" fill="#1f2937"/>
+  <g fill="#475569">
+    <rect x="55" y="85" width="22" height="16" rx="3"/><rect x="82" y="85" width="22" height="16" rx="3"/><rect x="109" y="85" width="22" height="16" rx="3"/><rect x="136" y="85" width="22" height="16" rx="3"/><rect x="163" y="85" width="22" height="16" rx="3"/><rect x="190" y="85" width="22" height="16" rx="3"/><rect x="217" y="85" width="28" height="16" rx="3"/>
+    <rect x="55" y="106" width="22" height="16" rx="3"/><rect x="82" y="106" width="22" height="16" rx="3"/><rect x="109" y="106" width="22" height="16" rx="3"/><rect x="136" y="106" width="22" height="16" rx="3"/><rect x="163" y="106" width="22" height="16" rx="3"/><rect x="190" y="106" width="22" height="16" rx="3"/><rect x="217" y="106" width="28" height="16" rx="3"/>
+  </g>
+  <rect x="95" y="127" width="110" height="14" rx="4" fill="#475569"/>
+</svg>

@@ -1,5 +1,5 @@
 // Tienda de Productos Electrónicos
-// Carga productos desde JSON, permite elegir cantidades, calcula el total y valida formularios.
+// Carga productos desde JSON, permitee elegir cantidades, calcula el total y valida formularios.
 
 let productos = []; // Aquí guardamos todos los productos del JSON
 
